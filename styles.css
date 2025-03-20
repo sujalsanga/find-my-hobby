@@ -1,0 +1,123 @@
+/* 🌟 Cool Animated Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* ✨ Animated Gradient Effect */
+@keyframes gradientBG {
+    0% { background: linear-gradient(135deg, #1e3c72, #2a5298); }
+    50% { background: linear-gradient(135deg, #ff512f, #dd2476); }
+    100% { background: linear-gradient(135deg, #1e3c72, #2a5298); }
+}
+
+body {
+    animation: gradientBG 8s infinite alternate;
+}
+
+/* 🌟 Title Styling */
+h1 {
+    color: white;
+    font-size: 40px;
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* 🔥 Start Button (Neon Glow) */
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+    transform: scale(1.1);
+}
+
+/* 🎭 Stylish Question Box (Glass Effect) */
+#question-container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    width: 80%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    transition: 0.5s;
+    transform: scale(1);
+}
+
+/* 🌀 Animated Questions */
+#question-container:hover {
+    transform: scale(1.05);
+}
+
+/* 🛎️ Question Text */
+#question-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* 🌈 Option Buttons */
+#options-container button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#options-container button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    transform: scale(1.1);
+}
+
+/* 🎯 Hobby Result */
+#hobbyResult {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+}
+
+/* 🚀 Smooth Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hidden {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
